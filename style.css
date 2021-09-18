@@ -87,7 +87,7 @@ header{
 /* main content general style */
 main {
   width: 100%;
-  height: 2000px;
+  height: 1161px;
   margin-top: 89px;
   align-items:center;
   justify-content: center;
@@ -259,6 +259,27 @@ color: #F2F2F2;
 /* main of cardsLanding - end */
 /* Cards styles - end */
 
+/* Banner instagram style - begin */
+.bannerBox{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.bannerIMG{
+  width: 70%;
+  border-radius:5px;
+}
+/* banner instagram style - end */
+
+footer{
+  width: 100%;
+  height: 233px;
+  background-color: #323232;
+}
+
 @media (max-width: 952px){}
 @media (max-width: 952px){}
 @media (max-width: 952px){}
@@ -350,7 +371,7 @@ main {
 
 .ladingButtonsgroupText{
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
@@ -407,7 +428,7 @@ main {
   align-items: center;
   justify-content: space-around;
   height: 100px;
-  width: 100%;
+  width: 20rem;
   border-radius: 4px;
   color: #F1F1F1;
 
@@ -416,7 +437,7 @@ main {
 
  .ladingButtonsgroup .ladingButtons .tutorialButton i{
   text-align: center;
-  font-size: 25px;
+  font-size: 27px;
   margin-top: 15px;
   color: #F1F1F1;
 }
@@ -426,7 +447,7 @@ main {
   font-style: normal;
   text-align: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 27px;
   margin-top: -35px;
   color: #F1F1F1;
 }
@@ -437,24 +458,6 @@ main {
   display: none;
   align-items: center;
   justify-content: center;
-
-  background: linear-gradient(91.19deg, #FEF4CD -7.78%, #FBE697 66.09%);
-  border-radius: 3px;
-}
-
-.chromeButton i{
-  font-size: 20px;
-  text-align: center;
-  margin-right: 15px;
-}
-
-#chromeTextButton{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  text-align: center;
-  font-size: 13px;
-  color: #323232;
 }
 /* Chrome extension button style - end */
 
@@ -471,7 +474,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 373px;
-  width: 237px;
+  width: 280px;
   border-radius: 5px;
   margin-top: 1rem;
 
