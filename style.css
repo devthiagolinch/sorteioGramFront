@@ -1,0 +1,503 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+
+body{
+  background-color: #F67D5C;
+}
+
+/* header styles */
+header{
+  position: absolute;
+  position: fixed;
+  height: 72px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  
+  
+  top: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+  background: rgba(246, 125, 92, 0.59);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(30px);
+}
+
+#logo{
+  margin-left: 10px;
+}
+
+/* menu general style */
+.menu{
+  position: absolute;
+  width: 307px;
+  height: 206px;
+  top: 72px;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 205, 191, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+/* Menu components style */
+.menu ul{
+  width: 100%;
+  height: 85%;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li{
+  text-decoration: none;
+}
+
+.menu ul li a {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 24px;
+
+  align-items: center;
+  text-align: left;
+
+  color: #F1F1F1;
+}
+
+.menu ul li a i{
+  margin-right: 0.5rem;
+}
+
+
+/* main content general style */
+main {
+  width: 100%;
+  height: 2000px;
+  margin-top: 89px;
+  align-items:center;
+  justify-content: center;
+}
+
+ .ladingButtonsgroup {
+  display: grid;
+  width: 100%;
+  height:479,44px;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.ladingButtonsgroupText{
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 88px;  
+
+color: #F2F2F2;
+}
+
+ .ladingButtons{
+  width: 588px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* Sort button style - begin */
+ .sortButton{
+  display: grid;
+  align-items: center;
+
+  height: 144px;
+  width: 266px;
+  border-radius: 4px;
+  margin-right: 56px;
+  color: #F1F1F1;
+
+  background: #FFB8A5;
+}
+
+ .sortButton i{
+  text-align: center;
+  font-size:35px;
+  color: #F1F1F1;
+  margin-top: 15px;
+}
+
+ .ladingButtonsgroup .ladingButtons .sortButton h3{
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size:25px;
+  color: #F1F1F1;
+  margin-top: -35px;
+}
+/* Sort button style - end */
+
+/* Tutorial button style - begin */
+ .ladingButtonsgroup .ladingButtons .tutorialButton{
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  height: 144px;
+  width: 266px;
+  border-radius: 4px;
+  color: #F1F1F1;
+
+  background: #5B7290;
+}
+
+ .ladingButtonsgroup .ladingButtons .tutorialButton i{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 15px;
+  color: #F1F1F1;
+}
+
+ .ladingButtonsgroup .ladingButtons .tutorialButton h3{
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: -35px;
+  color: #F1F1F1;
+}
+/* Tutorial button style - end */
+
+/* Chrome extension button style - begin */
+.chromeButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 588px;
+
+  background: linear-gradient(91.19deg, #FEF4CD -7.78%, #FBE697 66.09%);
+  border-radius: 3px;
+}
+
+.chromeButton i{
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+#chromeTextButton{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  color: #323232;
+}
+/* Chrome extension button style - end */
+
+/* Cards styles - begin */
+.cardsLanding{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 373px;
+  width: 100%; 
+}
+/* General card style - begin */
+#card{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 373px;
+  width: 237px;
+  margin: 0rem 2rem;
+  border-radius: 5px;
+
+  background: #F2F2F2;
+  border-radius: 5px;
+}
+/* General card style - end */
+/* main of cardsLanding - begin */
+.imgCardLanding{
+
+}
+
+.createdByLanding{
+
+}
+
+.infoAdmLanding{
+
+}
+
+.infoAdmLanding h3{
+
+}
+
+.infoAdmLanding p{
+
+}
+/* main of cardsLanding - end */
+/* Cards styles - end */
+
+@media (max-width: 952px){}
+@media (max-width: 952px){}
+@media (max-width: 952px){}
+@media (max-width: 555px){
+/* header styles */
+header{
+  position: absolute;
+  position: fixed;
+  height: 72px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
+  background: rgba(246, 125, 92, 0.59);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(30px);
+}
+
+#logo{
+  margin-left: 10px;
+}
+
+/* menu general style */
+.menu{
+  position: absolute;
+  width: 15rem;
+  height: 206px;
+  top: 89px;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 205, 191, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+/* Menu components style */
+.menu ul{
+  width: auto;
+  height: 85%;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li{
+  text-decoration: none;
+}
+
+.menu ul li a {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 24px;
+
+  align-items: center;
+  text-align: left;
+
+  color: #F1F1F1;
+}
+
+.menu ul li a i{
+  margin-right: 0.5rem;
+}
+
+
+/* main content general style */
+main {
+  width: 100%;
+  height: 100.5rem;
+  display: inline-block;
+  align-items:center;
+  justify-content: center;
+}
+
+ .ladingButtonsgroup {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  height:350px;
+  padding: 0px;
+}
+
+.ladingButtonsgroupText{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 3rem;  
+
+  color: #F2F2F2;
+}
+
+ .ladingButtons{
+  width: 100%;
+  height: auto;
+  display:grid;
+  align-items: center;
+  justify-content:space-around;
+}
+
+/* Sort button style - begin */
+ .sortButton{
+  display: grid;
+  align-items: center;
+
+  height: 100px;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  color: #F1F1F1;
+
+  background: #FFB8A5;
+}
+
+ .sortButton i{
+  text-align: center;
+  font-size:25px;
+  color: #F1F1F1;
+  margin-top: 15px;
+}
+
+ .ladingButtonsgroup .ladingButtons .sortButton h3{
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size:15px;
+  color: #F1F1F1;
+  margin-top: -35px;
+}
+/* Sort button style - end */
+
+/* Tutorial button style - begin */
+ .ladingButtonsgroup .ladingButtons .tutorialButton{
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  border-radius: 4px;
+  color: #F1F1F1;
+
+  background: #5B7290;
+}
+
+ .ladingButtonsgroup .ladingButtons .tutorialButton i{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+  color: #F1F1F1;
+}
+
+ .ladingButtonsgroup .ladingButtons .tutorialButton h3{
+  font-family: Montserrat;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: -35px;
+  color: #F1F1F1;
+}
+/* Tutorial button style - end */
+
+/* Chrome extension button style - begin */
+.chromeButton{
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(91.19deg, #FEF4CD -7.78%, #FBE697 66.09%);
+  border-radius: 3px;
+}
+
+.chromeButton i{
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+#chromeTextButton{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+  color: #323232;
+}
+/* Chrome extension button style - end */
+
+/* Cards styles - begin */
+.cardsLanding{
+  display: grid;
+  height:auto;
+  align-items: center;
+  justify-content: center;
+}
+/* General card style - begin */
+#card{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 373px;
+  width: 237px;
+  border-radius: 5px;
+  margin-top: 1rem;
+
+  background-color: #F2F2F2;
+}
+/* General card style - end */
+/* main of cardsLanding - begin */
+.imgCardLanding{
+
+}
+
+.createdByLanding{
+
+}
+
+.infoAdmLanding{
+
+}
+
+.infoAdmLanding h3{
+
+}
+
+.infoAdmLanding p{
+
+}
+/* main of cardsLanding - end */
+/* Cards styles - end */
+}
