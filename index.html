@@ -9,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="script.js">
     <title>SorteioGram</title>
 </head>
 <body>
     <header class="head">
-        <i class="fas fa-bars" style="color:#F1F1F1; font-size:28px;"></i>
+        <button id="btMenu">
+            <i class="fas fa-bars" style="color:#F1F1F1; font-size:28px;"></i>
+        </button>
 
         <a id="logo" href="#"><img src="assets/img/SorteioGram.svg" alt=""></a>
 
-        <nav class="menu">
+        <nav id="menu">
             <ul>
                 <li><a href="#"><span><i class="fab fa-instagram-square"></i></span>Realizar o Sorteio</a></li>
                 <li><a href="#"><span><i class="fas fa-envelope"></i></span>Fale Conosco</a></li>
@@ -42,7 +43,7 @@
                 </a>
 
                 <a href="#">
-                    <div class="tutorialButton">
+                    <div id="tutorialButton">
                         <i class="fas fa-play"></i>
                         <h3>Tutorial do Sorteio</h3>
                     </div>
@@ -56,45 +57,61 @@
             </div>
         </container>
 
+        <container id="tutorialPopup">
+            <h2>Como fazer um sorteio no Instagram grátis </h2>
+            <p class="textPopup">
+                Para realizar um sorteio no instagram com a nossa ferramenta é muito simples! No dia do seu sorteio acesso o nosso site e clique no botão <b>REALIZAR SORTEIO.  </b>
+                <br><br>
+                Após o clique você vai para uma página com a opção de digitar o seu nome de usuário do instagram e seu e-mail. Depois clique em prosseguir.<br><br>
+
+                O próximo passo é selecionar a publicação do seu sorteio que vai ser exibida no painel. Se houver qualquer erro na captura de dados do nosso sistema, você também pode inserir diretamente a URL da publicação e clicar no botão continuar.<br><br>
+
+                <b>Atenção:</b> iremos gerar uma lista com todos as pessoas que comentaram na sua publicação e dependendo do número de comentários isso pode demorar um pouco. Cada item desta lista vai receber um número. <br><br>
+
+                Feito isso você já pode clicar no botão SORTEAR UM NÚMERO e pronto! Agora é fazer o print do resultado do sorteio e publicar dentro do seu Instagram, facebook ou onde quiser!<br><br>
+
+                Você não precisa mais de outro site para sortear ou qualquer tutorial sobre como fazer sorteio no instagram. Com a nossa ferramenta tudo fica mais simples e rápido!
+            </p><br/><br/>
+            <h2> Como fazer sorteio no instagram: Bônus </h2>
+            <p class="textPopup2">
+                Caso queira também acessar outras dicas de marketing para instagram conheça a ferramenta 
+                <b><a href="https://growsocial.com.br/?ref=sorteiogram_tutorial" target="_blank">GrowSocial</a></b>. 
+                Com ela você pode <b><a href="https://growsocial.com.br/?ref=sorteiogram_tutorial" target="_blank">ganhar mais seguidores no Instagram</a> </b>
+                de maneira inteligente e estratégica! 
+                <br/><br/>
+                
+                Conecte sua conta no instagram com a nossa ferramenta e veja como fazemos a sua conta crescer todos os dias!  <br><br>
+                Primeiro você seleciona o público que quer atingir através das hashtags, localização ou até mesmo pode selecionar  <br><br>
+                perfis concorrentes que têm o público que você quer atingir.<br><br> Depois disso nossa ferramenta faz todo o trabalhar para 
+                tingir os seguidores corretos de maneira automática para você. 
+            </p>
+            <button id="btClosePopup">Fechar</button>
+        </container>
+
         <container class="cardsLanding">
             <div id="card">
-                <div class="imgCardLanding"><img src="" alt=""></div>
-                <h3>1</h3>
-                <p></p>
-                <div class="createdByLanding">
-                    <img class="createdAdmLanding" src="" alt="">
-                    <div class="infoAdmLanding">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
+                <p> The result will have how many numbers? </p>
+                <input type="number" name="amount" id="qtNumbers" value="1" />
+
+                <p> Entre com o valor minimo</p>
+                <input type="number" name="minimo" id="minimo" value="1" />
+
+                <p>Entre com o valor maximo</p>
+                <input type="number" name="maximo" id="maximo" value="100" />
+
+                <button onclick="sorteioNumeros()">Sortear</button>
+            
+                <h1 id="resultadoNumeros"></h1>
             </div>
 
-            <div id="card">
-                <div class="imgCardLanding"><img src="" alt=""></div>
-                <h3>2</h3>
-                <p></p>
-                <div class="createdByLanding">
-                    <img class="createdAdmLanding" src="" alt="">
-                    <div class="infoAdmLanding">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="card">
-                <div class="imgCardLanding"><img src="" alt=""></div>
-                <h3>3</h3>
-                <p></p>
-                <div class="createdByLanding">
-                    <img class="createdAdmLanding" src="" alt="">
-                    <div class="infoAdmLanding">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+            <!-- <div id="card">
+                <p>The result will have how many names?</p>
+                <input type="number" name="amount" id="qtNames" value="1" />
+                <textarea id="names"></textarea>
+
+                <button onclick="sorteioNomes()">Sortear</button>
+                <h1 id="resultadoNomes"></h1>
+            </div> -->
         </container>
 
         <container class="bannerBox">
@@ -105,5 +122,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
