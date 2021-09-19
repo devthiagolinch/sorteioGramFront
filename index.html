@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>SorteioGram</title>
+    <title>SorteioGram-Thiago</title>
 </head>
 <body>
     <header class="head">
@@ -35,7 +35,7 @@
                 Simples, rápido e confiável !
             </p>
             <div class="ladingButtons">
-                <a href="#">
+                <a href="#link">
                     <div class="sortButton">
                         <i class="fas fa-users"></i>
                         <h3>Realizar Sorteio</h3>
@@ -50,69 +50,62 @@
                 </a>
             </div>
 
-            <div class="chromeButton">
+            <div id="link" class="chromeButton">
                 <i class="fab fa-chrome"></i>
                 <p id="chromeTextButton">Instale a extensão do SorteioGram para carregar mais rápido,
                 <a href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne?hl=pt-BR">Clique aqui</a>.</p>
             </div>
+
+            <container id="tutorialPopup">
+                <h2>Como fazer sorteio de Numeros </h2>
+                <p class="textPopup">
+                    Insira quantos números você deseja no resultado do sorteio. <b>Exemplo: 3</b><br></br>
+                    Preencha qual intervalo deve ser traçado. <b>Exemplo: entre 1 e 100</b><br></br>
+                    Clique em <b>"Sortear"</b>.
+                </p><br/><br/>
+                <h2> Como fazer sorteio de Nomes </h2>
+                <p class="textPopup">
+                    Insira quantos nomes você deseja no resultado do sorteio. <b>Exemplo: 3</b> <br></br>
+                    Insira os nomes que deseja desenhar, um nome por linha.<br></br>
+                    Clique em <b>"Sortear"</b>.
+                </p>
+                <button id="btClosePopup">Fechar</button>
+            </container>
         </container>
 
-        <container id="tutorialPopup">
-            <h2>Como fazer um sorteio no Instagram grátis </h2>
-            <p class="textPopup">
-                Para realizar um sorteio no instagram com a nossa ferramenta é muito simples! No dia do seu sorteio acesso o nosso site e clique no botão <b>REALIZAR SORTEIO.  </b>
-                <br><br>
-                Após o clique você vai para uma página com a opção de digitar o seu nome de usuário do instagram e seu e-mail. Depois clique em prosseguir.<br><br>
 
-                O próximo passo é selecionar a publicação do seu sorteio que vai ser exibida no painel. Se houver qualquer erro na captura de dados do nosso sistema, você também pode inserir diretamente a URL da publicação e clicar no botão continuar.<br><br>
+        <div id="sort">
+            <h1 id="b1">Realize os Sorteios:</h1>
+            <container class="cardsLanding">
+                <div id="card">
+                    <label class="cardLabel"> Quantos numeros devem ser sorteados? </label>
+                    <input class="cardInput" type="number" name="amount" id="qtNumbers" value="1" />
+    
+                    <label class="cardLabel"> Entre:</label>
+                    <input class="cardInput" type="number" name="minimo" id="minimo" value="1" />
+    
+                    <label class="cardLabel">E:</label>
+                    <input class="cardInput" type="number" name="maximo" id="maximo" value="100" />
+    
+                    <button class="cardButton" onclick="sorteioNumeros()">Sortear</button>
+    
+                    <div class="cardResults">
+                        <p id="resultadoNumeros"></p>
+                    </div>
+                </div>
+                <div id="card">
+                    <label class="cardLabel">Quantos nomes devem ser sortados?</label>
+                    <input class="cardInput" type="number" name="amount" id="qtNames" value="1" />
 
-                <b>Atenção:</b> iremos gerar uma lista com todos as pessoas que comentaram na sua publicação e dependendo do número de comentários isso pode demorar um pouco. Cada item desta lista vai receber um número. <br><br>
-
-                Feito isso você já pode clicar no botão SORTEAR UM NÚMERO e pronto! Agora é fazer o print do resultado do sorteio e publicar dentro do seu Instagram, facebook ou onde quiser!<br><br>
-
-                Você não precisa mais de outro site para sortear ou qualquer tutorial sobre como fazer sorteio no instagram. Com a nossa ferramenta tudo fica mais simples e rápido!
-            </p><br/><br/>
-            <h2> Como fazer sorteio no instagram: Bônus </h2>
-            <p class="textPopup2">
-                Caso queira também acessar outras dicas de marketing para instagram conheça a ferramenta 
-                <b><a href="https://growsocial.com.br/?ref=sorteiogram_tutorial" target="_blank">GrowSocial</a></b>. 
-                Com ela você pode <b><a href="https://growsocial.com.br/?ref=sorteiogram_tutorial" target="_blank">ganhar mais seguidores no Instagram</a> </b>
-                de maneira inteligente e estratégica! 
-                <br/><br/>
-                
-                Conecte sua conta no instagram com a nossa ferramenta e veja como fazemos a sua conta crescer todos os dias!  <br><br>
-                Primeiro você seleciona o público que quer atingir através das hashtags, localização ou até mesmo pode selecionar  <br><br>
-                perfis concorrentes que têm o público que você quer atingir.<br><br> Depois disso nossa ferramenta faz todo o trabalhar para 
-                tingir os seguidores corretos de maneira automática para você. 
-            </p>
-            <button id="btClosePopup">Fechar</button>
-        </container>
-
-        <container class="cardsLanding">
-            <div id="card">
-                <p> The result will have how many numbers? </p>
-                <input type="number" name="amount" id="qtNumbers" value="1" />
-
-                <p> Entre com o valor minimo</p>
-                <input type="number" name="minimo" id="minimo" value="1" />
-
-                <p>Entre com o valor maximo</p>
-                <input type="number" name="maximo" id="maximo" value="100" />
-
-                <button onclick="sorteioNumeros()">Sortear</button>
-            
-                <h1 id="resultadoNumeros"></h1>
-            </div>
-
-            <!-- <div id="card">
-                <p>The result will have how many names?</p>
-                <input type="number" name="amount" id="qtNames" value="1" />
-                <textarea id="names"></textarea>
-
-                <button onclick="sorteioNomes()">Sortear</button>
-                <h1 id="resultadoNomes"></h1>
-            </div> -->
-        </container>
+                    <textarea name="nomes" id="names" max-cols="30" rows="6" placeholder="Digite cada nome por linha..."></textarea>
+    
+                    <button class="cardButton" onclick="sorteioNomes()">Sortear</button>
+                    <div class="cardResults">
+                        <p id="resultadoNomes"></p>
+                    </div>
+                </div>
+            </container>
+        </div>
 
         <container class="bannerBox">
             <img class="bannerIMG" src="assets/img/insta_banner.jpeg" alt="" loading="lazy"></img>

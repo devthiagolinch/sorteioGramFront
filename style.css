@@ -217,20 +217,24 @@ color: #F2F2F2;
 /* Pop-Up styles - begin */
 #tutorialPopup {
   position: absolute;
+  width: 50rem;
+  height: calc(100vh - 60px);
+  right: 0px;
   padding: 2rem;
-  margin-left: 24vh;
   top: 60px;
   display: none;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.789);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   /* Note: backdrop-filter has minimal browser support */
   
-  border-radius: 35px;
+  border-radius: 0 0 0 0;
 }
 #tutorialPopup.active {
   display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 #tutorialPopup h2{
@@ -245,43 +249,26 @@ color: #F2F2F2;
 
 .textPopup {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  margin-top: 0.9rem;
-  width: 1064px;
-  height: 440px;
+  margin-bottom: 0rem;
+  width: 90%;
+  height: auto;
 
   color: #000000;
 }
 
-.textPopup2 {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 0.9rem;
-  width: 1064px;
-  height: 440px;
-
-  color: #000000;
-}
-.textPopup2 a {
-  color: #F67D5C;
-}
 #btClosePopup {
-  margin-top: -1rem;
   font-size: 20px;
   color: #f1f1f1;
 
   width: 8rem;
   padding: 1rem;
+  margin-top: 2rem;
   border-radius: 0.8rem;
   background: #F67D5C;
   border-style: none;
@@ -307,6 +294,20 @@ color: #F2F2F2;
 }
 /* Chrome extension button style - end */
 
+#sort{
+  display: grid;
+  align-items:center;
+  justify-content:center;
+}
+
+#b1{
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 2rem;
+  color: #F1F1F1;
+}
 /* Cards styles - begin */
 .cardsLanding{
   display: flex;
@@ -320,16 +321,78 @@ color: #F2F2F2;
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 373px;
-  width: 237px;
+  height: 376px;
+  width: 18rem;
+  padding: 1rem;
   margin: 0rem 2rem;
-  border-radius: 5px;
+  border-radius: 16px;
 
-  background: #f1f1f1;
-  border-radius: 5px;
+  background: #ffffff;
+}
+#card:hover{
+  box-shadow: 6px 6px 10px rgba(150, 150, 150, 0.65);
 }
 /* General card style - end */
 /* main of cardsLanding - begin */
+.cardLabel{
+  max-width: 100%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: -3px;
+}
+.cardInput{
+  font-family: Montserrat;
+  font-weight: 600;
+  border-color: #FFB8A5;
+  border-style: solid;
+  border-radius: 10px;
+  padding: .6rem;
+  align-self: center;
+}
+#names{
+  padding: 10px;
+  min-width: 100%;
+  max-width: 3.5em;
+  min-height: 4em;
+  max-height: 10em;
+  border-radius: 5px;
+  border: 1px solid #F67D5C;
+  box-shadow: 1px 1px 1px #999;
+}
+.cardButton{
+  width: 5.7rem;
+  border-style: none;
+  border-radius: 4rem;
+  background-color: #5B7290;
+  padding: .5rem;
+  color: #F1F1F1;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin-left: 5rem;
+}
+.cardResults{
+  display:flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+#resultadoNumeros{
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 25px;
+  color:#F67D5C;
+}
+#resultadoNomes{
+  max-width: 100%;
+  height: auto;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 25px;
+  color:#F67D5C;
+}
 /* main of cardsLanding - end */
 /* Cards styles - end */
 
@@ -551,30 +614,10 @@ main {
   width: 280px;
   border-radius: 5px;
   margin-top: 1rem;
-
-  background-color: #F2F2F2;
 }
 /* General card style - end */
 /* main of cardsLanding - begin */
-.imgCardLanding{
 
-}
-
-.createdByLanding{
-
-}
-
-.infoAdmLanding{
-
-}
-
-.infoAdmLanding h3{
-
-}
-
-.infoAdmLanding p{
-
-}
 /* main of cardsLanding - end */
 /* Cards styles - end */
 }

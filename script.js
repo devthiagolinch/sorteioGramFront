@@ -63,15 +63,14 @@ function sorteioNomes(){
 const names = document.getElementById("names").value.split('\n');
 const qtName = document.getElementById("qtNames").value;
 
+    function getRandomNames(names) {
+        return sortName = names[Math.floor(Math.random()*names.length)];
+    }
 
-function getRandomNames() {
-    return sortNames = [names];
-}
+    let arrayNames = [];
+    for (let i = 0; i < qtName; i++) {
+        arrayNames.push(getRandomNames(names))
+    }
 
-let arrayName = [];
-for (let i = 0; i < qtName; i++) {
-    arrayName.push(getRandomNames(names))
-}
-
-document.getElementById("resultadoNomes").innerHTML=arrayName;
+    document.getElementById("resultadoNomes").innerHTML=arrayNames;
 }
