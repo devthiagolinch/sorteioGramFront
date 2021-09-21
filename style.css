@@ -354,7 +354,6 @@ color: #F2F2F2;
   min-width: 100%;
   max-width: 3.5em;
   min-height: 4em;
-  max-height: 10em;
   border-radius: 5px;
   border: 1px solid #F67D5C;
   margin-bottom: 1rem;
@@ -376,17 +375,18 @@ color: #F2F2F2;
   -ms-flex-flow:row wrap;
   flex-flow:row wrap;
 }
+
 #resultadoNumeros{
   font-family: Montserrat;
   font-weight: 600;
   color:#F67D5C;
 
-  /* overflow:inherit; */
+  overflow: auto;
   /* text-overflow: ellipsis; */
   display: -webkit-box;
   line-height: 20px;     /* fallback */
   max-height: 300px;      /* fallback */
-  /* -webkit-line-clamp: 3; */ /* number of lines to show */
+  -webkit-line-clamp: 17; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 #resultadoNomes{
@@ -394,12 +394,12 @@ color: #F2F2F2;
   font-weight: 600;
   color:#F67D5C;
 
-  /* overflow: hidden; */
+  overflow: auto;
   /* text-overflow: ellipsis; */
   display: -webkit-box;
   line-height: 32px;     /* fallback */
   max-height: 300px;      /* fallback */
- /*  -webkit-line-clamp: 20; */ /* number of lines to show */
+  -webkit-line-clamp: 17; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 /* main of cardsLanding - end */
