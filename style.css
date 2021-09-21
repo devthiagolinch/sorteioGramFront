@@ -233,7 +233,6 @@ color: #F2F2F2;
 }
 #tutorialPopup.active {
   display: grid;
-  position: fixed;
   align-items: center;
   justify-content: center;
   cursor:default;
