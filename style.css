@@ -524,7 +524,7 @@ main {
   margin-top: 89px;
   align-items:center;
   justify-content: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: .3rem;
 }
 
  .ladingButtonsgroup {
@@ -630,7 +630,7 @@ main {
 /* Pop-Up styles - begin */
 #tutorialPopup {
   width: 100%;
-  padding: 5 0;
+  padding: 5px 0px;
 }
 
 #btClosePopup {
@@ -639,7 +639,7 @@ main {
 
   width: 8rem;
   padding: 1rem;
-  margin-top: 0;
+  margin-top: -3rem;
   border-radius: 0.8rem;
   background: #F67D5C;
   border-style: none;
@@ -756,12 +756,12 @@ main {
   display:flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .bannerIMG{
   width: 90%;
-  height: 8rem;
+  height: 4rem;
   border-radius:5px;
 }
 /* banner instagram style - end */
