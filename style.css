@@ -634,12 +634,11 @@ main {
 }
 
 #btClosePopup {
-  font-size: 20px;
+  font-size: 15px;
   color: #f1f1f1;
 
-  width: 8rem;
-  padding: 1rem;
-  margin-top: -1rem;
+  width: 6rem;
+  padding: .7rem;
   border-radius: 0.8rem;
   background: #F67D5C;
   border-style: none;
