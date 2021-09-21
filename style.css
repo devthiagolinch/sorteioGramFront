@@ -522,9 +522,11 @@ header{
 main {
   width: 100%;
   height: auto;
-  display: inline-block;
+  padding: 2rem;
+  margin-top: 89px;
   align-items:center;
   justify-content: center;
+  margin-bottom: 2.4rem;
 }
 
  .ladingButtonsgroup {
@@ -745,7 +747,7 @@ main {
 
 .bannerIMG{
   width: 90%;
-  height: 4rem;
+  height: 8rem;
   border-radius:5px;
 }
 /* banner instagram style - end */
