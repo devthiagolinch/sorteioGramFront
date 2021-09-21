@@ -632,6 +632,8 @@ main {
 /* Pop-Up styles - begin */
 #tutorialPopup {
   width: 100%;
+  height: auto;
+  padding: 5 0;
 }
 /* Pop-Up styles - end */
 
