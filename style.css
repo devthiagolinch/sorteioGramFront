@@ -217,10 +217,10 @@ color: #F2F2F2;
 /* Pop-Up styles - begin */
 #tutorialPopup {
   position: absolute;
-  width: 50rem;
+  width: 47rem;
   height: calc(100vh - 60px);
   right: 0px;
-  padding: 2rem;
+  padding: 3rem;
   top: 60px;
   display: none;
   align-items: center;
@@ -235,6 +235,7 @@ color: #F2F2F2;
   display: grid;
   align-items: center;
   justify-content: center;
+  cursor:default;
 }
 
 #tutorialPopup h2{
@@ -268,7 +269,7 @@ color: #F2F2F2;
 
   width: 8rem;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 0.8rem;
   background: #F67D5C;
   border-style: none;
@@ -313,16 +314,17 @@ color: #F2F2F2;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 373px;
-  width: 100%; 
+  height: auto;
+  width: 100%;
+  padding: 0;
 }
 /* General card style - begin */
 #card{
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 376px;
-  width: 18rem;
+  width: 19rem;
+  height: 100%;
   padding: 1rem;
   margin: 0rem 2rem;
   border-radius: 16px;
@@ -340,7 +342,6 @@ color: #F2F2F2;
   font-weight: 400;
   font-size: 15px;
   text-align: center;
-  margin-bottom: -3px;
 }
 .cardInput{
   font-family: Montserrat;
@@ -350,6 +351,7 @@ color: #F2F2F2;
   border-radius: 10px;
   padding: .6rem;
   align-self: center;
+  margin-bottom: 1rem;
 }
 #names{
   padding: 10px;
@@ -359,6 +361,7 @@ color: #F2F2F2;
   max-height: 10em;
   border-radius: 5px;
   border: 1px solid #F67D5C;
+  margin-bottom: 1rem;
   box-shadow: 1px 1px 1px #999;
 }
 .cardButton{
@@ -373,25 +376,35 @@ color: #F2F2F2;
   margin-left: 5rem;
 }
 .cardResults{
-  display:flex;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
+  margin-top: .5rem;
+  -ms-flex-flow:row wrap;
+  flex-flow:row wrap;
 }
 #resultadoNumeros{
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 25px;
   color:#F67D5C;
+
+  /* overflow:inherit; */
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  line-height: 20px;     /* fallback */
+  max-height: 300px;      /* fallback */
+  /* -webkit-line-clamp: 3; */ /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 #resultadoNomes{
-  max-width: 100%;
-  height: auto;
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 25px;
   color:#F67D5C;
+
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  line-height: 32px;     /* fallback */
+  max-height: 300px;      /* fallback */
+ /*  -webkit-line-clamp: 20; */ /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 /* main of cardsLanding - end */
 /* Cards styles - end */
@@ -598,6 +611,12 @@ main {
 }
 /* Chrome extension button style - end */
 
+/* Pop-Up styles - begin */
+#tutorialPopup {
+  width: 100%;
+}
+/* Pop-Up styles - end */
+
 /* Cards styles - begin */
 .cardsLanding{
   display: grid;
@@ -605,19 +624,119 @@ main {
   align-items: center;
   justify-content: center;
 }
+#b1{
+  font-size: 32px;
+  content: "Realize o \n sorteio";
+  margin: 1rem 0rem;
+}
 /* General card style - begin */
 #card{
   display: grid;
   align-items: center;
-  justify-content: center;
-  height: 373px;
-  width: 280px;
-  border-radius: 5px;
-  margin-top: 1rem;
+  justify-content: space-around;
+  height: auto;
+  width: 18rem;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border-radius: 16px;
+
+  background: #ffffff;
 }
 /* General card style - end */
 /* main of cardsLanding - begin */
+.cardLabel{
+  max-width: 100%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: .6rem;
+}
+.cardInput{
+  font-family: Montserrat;
+  font-weight: 600;
+  border-color: #FFB8A5;
+  border-style: solid;
+  border-radius: 10px;
+  padding: .6rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+#names{
+  padding: 10px;
+  min-width: 100%;
+  max-width: 3.5em;
+  min-height: 4em;
+  max-height: 10em;
+  border-radius: 5px;
+  border: 1px solid #F67D5C;
+  box-shadow: 1px 1px 1px #999;
+  margin-bottom: 1rem;
+}
+.cardButton{
+  width: 5.7rem;
+  border-style: none;
+  border-radius: 4rem;
+  background-color: #5B7290;
+  padding: .5rem;
+  color: #F1F1F1;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin-left: 5rem;
+}
+.cardResults{
+  margin-top: .5rem;
+  -ms-flex-flow:row wrap;
+  flex-flow:row wrap;
+}
+#resultadoNumeros{
+  font-family: Montserrat;
+  font-weight: 600;
+  color:#F67D5C;
 
+  /* overflow:inherit; */
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  line-height: 20px;     /* fallback */
+  max-height: 300px;      /* fallback */
+  /* -webkit-line-clamp: 3; */ /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+#resultadoNomes{
+  font-family: Montserrat;
+  font-weight: 600;
+  color:#F67D5C;
+
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  display: -webkit-box;
+  line-height: 32px;     /* fallback */
+  max-height: 300px;      /* fallback */
+ /*  -webkit-line-clamp: 20; */ /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
 /* main of cardsLanding - end */
 /* Cards styles - end */
+
+/* Banner instagram style - begin */
+.bannerBox{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.bannerIMG{
+  width: 90%;
+  height: 8rem;
+  border-radius:5px;
+}
+/* banner instagram style - end */
+
+footer{
+  width: 100%;
+  height: 233px;
+  background-color: #323232;
+}
 }

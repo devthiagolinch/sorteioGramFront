@@ -47,7 +47,7 @@ const max = document.getElementById("maximo").value;
 const qtNumeros = document.getElementById("qtNumbers").value;
 
 function getRandom(min,max) {
-    return sortNumber = Math.floor(Math.random()*(Math.floor(max) - Math.floor(min) + 1)) + Math.floor(min)
+    return sortNumber = Math.floor(Math.random()*(Math.floor(max) - Math.floor(min) + 1)) + Math.floor(min) + ' ';
 }
 
 let arrayNum = [];
@@ -64,12 +64,12 @@ const names = document.getElementById("names").value.split('\n');
 const qtName = document.getElementById("qtNames").value;
 
     function getRandomNames(names) {
-        return sortName = names[Math.floor(Math.random()*names.length)];
+        return sortName = names[Math.floor(Math.random()*names.length)] + ' ';
     }
 
     let arrayNames = [];
     for (let i = 0; i < qtName; i++) {
-        arrayNames.push(getRandomNames(names))
+        arrayNames.push(getRandomNames(names));
     }
 
     document.getElementById("resultadoNomes").innerHTML=arrayNames;

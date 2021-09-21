@@ -57,16 +57,16 @@
             </div>
 
             <container id="tutorialPopup">
-                <h2>Como fazer sorteio de Numeros </h2>
+                <h2>Como fazer sorteio de Números </h2>
                 <p class="textPopup">
-                    Insira quantos números você deseja no resultado do sorteio. <b>Exemplo: 3</b><br></br>
-                    Preencha qual intervalo deve ser traçado. <b>Exemplo: entre 1 e 100</b><br></br>
+                    No primeiro campo insira quantos números você deseja no resultado do sorteio. <b>Exemplo: 3</b><br></br>
+                    Nos campos seguintes preencha o intervalo de números a ser sorteado. <b>Exemplo: entre 1 e 100</b><br></br>
                     Clique em <b>"Sortear"</b>.
                 </p><br/><br/>
                 <h2> Como fazer sorteio de Nomes </h2>
                 <p class="textPopup">
-                    Insira quantos nomes você deseja no resultado do sorteio. <b>Exemplo: 3</b> <br></br>
-                    Insira os nomes que deseja desenhar, um nome por linha.<br></br>
+                    No primeiro campo insira quantos nomes você deseja no resultado do sorteio. <b>Exemplo: 3</b> <br></br>
+                    No segundo campo insira os nomes que deseja sortear, um nome por linha.<br></br>
                     Clique em <b>"Sortear"</b>.
                 </p>
                 <button id="btClosePopup">Fechar</button>
@@ -75,7 +75,7 @@
 
 
         <div id="sort">
-            <h1 id="b1">Realize os Sorteios:</h1>
+            <h1 id="b1">Realize os <br> Sorteios:</h1>
             <container class="cardsLanding">
                 <div id="card">
                     <label class="cardLabel"> Quantos numeros devem ser sorteados? </label>
@@ -90,7 +90,7 @@
                     <button class="cardButton" onclick="sorteioNumeros()">Sortear</button>
     
                     <div class="cardResults">
-                        <p id="resultadoNumeros"></p>
+                        <span id="resultadoNumeros"></span>
                     </div>
                 </div>
                 <div id="card">
@@ -100,9 +100,9 @@
                     <textarea name="nomes" id="names" max-cols="30" rows="6" placeholder="Digite cada nome por linha..."></textarea>
     
                     <button class="cardButton" onclick="sorteioNomes()">Sortear</button>
-                    <div class="cardResults">
-                        <p id="resultadoNomes"></p>
-                    </div>
+                <div class="cardResults">
+                    <span id="resultadoNomes"></span>
+                </div>
                 </div>
             </container>
         </div>
@@ -115,6 +115,7 @@
     <footer>
 
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
