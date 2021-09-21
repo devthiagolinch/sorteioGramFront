@@ -1,6 +1,6 @@
 <img src="assets/img/SorteioGram.png">
 
-<h2><a href="https://devthiagolinch.github.io/sorteioGramFront/">link para a página web</a></h2>
+<h2><a href="https://github.com/devthiagolinch/sorteioGramThiagoLinch.git">link para a página web</a></h2>
 
 
 # 📌 Sobre
