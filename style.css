@@ -244,7 +244,6 @@ color: #F2F2F2;
   font-style: normal;
   font-weight: 500;
   line-height: 43px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -256,7 +255,6 @@ color: #F2F2F2;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 0rem;
   width: 90%;
   height: auto;
 
@@ -632,8 +630,22 @@ main {
 /* Pop-Up styles - begin */
 #tutorialPopup {
   width: 100%;
-  height: auto;
   padding: 5 0;
+}
+
+#btClosePopup {
+  font-size: 20px;
+  color: #f1f1f1;
+
+  width: 8rem;
+  padding: 1rem;
+  margin-top: 0;
+  border-radius: 0.8rem;
+  background: #F67D5C;
+  border-style: none;
+}
+#btClosePopup:hover {
+  cursor: pointer;
 }
 /* Pop-Up styles - end */
 
